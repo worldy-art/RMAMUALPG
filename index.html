@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RMA MUA LAMPUNG - Professional Makeup Artist & Beauty Studio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        roseGold: '#C5A059',
+                        roseGoldLight: '#E6D5B8',
+                        champagne: '#F7F4EF',
+                        darkCharcoal: '#1A1A1A',
+                        softNude: '#EFECE6'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts: Playfair Display & Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #F7F4EF; color: #1A1A1A; }
+        h1, h2, h3, .font-serif { font-family: 'Playfair Display', serif; }
+        .hero-bg {
+            background: linear-gradient(rgba(26, 26, 26, 0.4), rgba(26, 26, 26, 0.4)), url('https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat;
+        }
+    </style>
+</head>
+<body class="bg-champagne text-darkCharcoal antialiased selection:bg-roseGold selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-champagne/90 backdrop-blur-md border-b border-roseGold/20 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="font-serif text-2xl font-bold tracking-wider text-darkCharcoal">
+                AURA<span class="text-roseGold font-light">MUA</span>
+            </a>
+            
+            <!-- Desktop Nav Menu -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">
+                <a href="#home" class="hover:text-roseGold transition-colors">Beranda</a>
+                <a href="#about" class="hover:text-roseGold transition-colors">Tentang</a>
+                <a href="#services" class="hover:text-roseGold transition-colors">Layanan & Harga</a>
+                <a href="#portfolio" class="hover:text-roseGold transition-colors">Portofolio</a>
+                <a href="#testimonials" class="hover:text-roseGold transition-colors">Testimoni</a>
+                <a href="#booking" class="px-5 py-2.5 bg-darkCharcoal text-champagne rounded-full hover:bg-roseGold transition-all duration-300 shadow-sm">Booking Sekarang</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-2xl text-darkCharcoal focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-champagne border-b border-roseGold/20 py-6 px-6 shadow-lg flex flex-col space-y-4">
+            <a href="#home" class="mobile-link text-lg hover:text-roseGold">Beranda</a>
+            <a href="#about" class="mobile-link text-lg hover:text-roseGold">Tentang</a>
+            <a href="#services" class="mobile-link text-lg hover:text-roseGold">Layanan & Harga</a>
+            <a href="#portfolio" class="mobile-link text-lg hover:text-roseGold">Portofolio</a>
+            <a href="#testimonials" class="mobile-link text-lg hover:text-roseGold">Testimoni</a>
+            <a href="#booking" class="mobile-link px-5 py-3 bg-darkCharcoal text-champagne text-center rounded-full hover:bg-roseGold">Booking Sekarang</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg min-h-screen flex items-center justify-center text-center px-6 pt-20">
+        <div class="max-w-3xl mx-auto text-white">
+            <span class="uppercase tracking-[0.3em] text-xs font-semibold px-4 py-1.5 bg-white/10 backdrop-blur-sm rounded-full inline-block mb-6 border border-white/20 text-roseGoldLight">Professional Makeup Artist</span>
+            <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">Enhance Your Natural Elegance & Beauty</h1>
+            <p class="text-lg md:text-xl font-light text-gray-200 mb-10 max-w-2xl mx-auto">Spesialis Wedding, Engagement, Graduation, dan Special Event Makeup yang siap memancarkan pesona terbaik di hari spesialmu.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#booking" class="px-8 py-4 bg-roseGold text-white font-medium rounded-full hover:bg-roseGoldLight hover:text-darkCharcoal transition-all duration-300 shadow-lg">Jadwalkan Sesi Kamu</a>
+                <a href="#portfolio" class="px-8 py-4 bg-transparent border border-white/80 text-white font-medium rounded-full hover:bg-white hover:text-darkCharcoal transition-all duration-300">Lihat Portofolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div class="relative">
+            <div class="absolute -inset-4 bg-roseGold/20 rounded-2xl transform -rotate-2"></div>
+            <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=800&auto=format&fit=crop" alt="MUA At Work" class="relative rounded-xl shadow-xl w-full object-cover h-[450px]">
+        </div>
+        <div>
+            <span class="text-roseGold uppercase tracking-widest text-xs font-semibold">Tentang Artist</span>
+            <h2 class="font-serif text-3xl md:text-4xl font-bold mt-2 mb-6">Halo, Saya Sarah Aura</h2>
+            <p class="text-gray-600 leading-relaxed mb-6">Berpengalaman lebih dari 6 tahun di industri kecantikan, saya percaya bahwa setiap wanita memiliki kecantikan uniknya sendiri. Sentuhan makeup profesional dirancang bukan untuk mengubah, melainkan menonjolkan fitur terbaik wajah Anda dengan hasil tahan lama dan tampak flawless.</p>
+            <div class="grid grid-cols-3 gap-6 border-t border-roseGold/30 pt-6">
+                <div>
+                    <h3 class="font-serif text-2xl font-bold text-roseGold">500+</h3>
+                    <p class="text-xs text-gray-500 mt-1">Klien Puas</p>
+                </div>
+                <div>
+                    <h3 class="font-serif text-2xl font-bold text-roseGold">6+</h3>
+                    <p class="text-xs text-gray-500 mt-1">Tahun Pengalaman</p>
+                </div>
+                <div>
+                    <h3 class="font-serif text-2xl font-bold text-roseGold">100%</h3>
+                    <p class="text-xs text-gray-500 mt-1">Produk Premium</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Pricing Section -->
+    <section id="services" class="py-24 bg-softNude px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-xl mx-auto mb-16">
+                <span class="text-roseGold uppercase tracking-widest text-xs font-semibold">Layanan & Harga</span>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold mt-2">Pilihan Paket Kecantikan</h2>
+                <p class="text-gray-600 text-sm mt-3">Pilih layanan sesuai kebutuhan acara spesial Anda. Tersedia konsultasi gratis sebelum hari-H.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Package 1 -->
+                <div class="bg-champagne rounded-2xl p-8 shadow-sm border border-roseGold/20 hover:shadow-md transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="font-serif text-xl font-bold">Graduation & Party</h3>
+                            <span class="text-xs bg-roseGold/10 text-roseGold px-3 py-1 rounded-full font-medium">Popular</span>
+                        </div>
+                        <p class="text-gray-500 text-sm mb-6">Sempurna untuk acara wisuda, pesta malam, ulang tahun, atau kondangan.</p>
+                        <ul class="space-y-3 text-sm text-gray-600 mb-8">
+                            <li><i class="fa-solid fa-check text-roseGold mr-2"></i> Makeup Flawless Tahan 12 Jam</li>
+                            <li><i class="fa-solid fa-check text-roseGold mr-2"></i> Hairdo / Hijab Styling</li>
+                            <li><i class="fa-solid fa-check text-roseGold mr-2"></i> Pemasangan Bulu Mata Premium</li>
+                            <li><i class="fa-solid fa-xmark text-gray-300 mr-2"></i> Retouch Session</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-serif font-bold text-darkCharcoal mb-6">Rp 750.000</div>
+                        <a href="#booking" onclick="selectService('Graduation & Party Makeup')" class="block text-center w-full py-3 bg-darkCharcoal text-champagne rounded-xl font-medium hover:bg-roseGold transition-colors">Pilih Paket</a>
+                    </div>
+                </div>
+
+                <!-- Package 2 -->
+                <div class="bg-darkCharcoal text-champagne rounded-2xl p-8 shadow-xl border border-roseGold/40 relative flex flex-col justify-between transform md:-translate-y-2">
+                    <span class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-roseGold text-white text-[10px] uppercase tracking-widest px-3 py-1 rounded-full font-semibold">Best Value</span>
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="font-serif text-xl font-bold text-white">Engagement / Lamaran</h3>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-6">Tampil menawan dan anggun di momen pertunangan spesial Anda.</p>
+                        <ul class="space-y-3 text-sm text-gray-300 mb-8">
+                            <li><i class="fa-solid fa-check text-roseGold mr-2"></i> HD Airbrush Makeup</li>
+                            <li><i class="fa-solid fa-check text-roseGold mr-2"></i> Hairdo / Custom Hijab Styling</li>
+                            <li><i class="fa-solid fa-check text-roseGold mr-2"></i> Touch Up Kit Pribadi</li>
+                            <li><i class="fa-solid fa-check text-roseGold mr-2"></i> Manicure Touch Up Gratis</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-serif font-bold text-roseGoldLight mb-6">Rp 1.500.000</div>
+                        <a href="#booking" onclick="selectService('Engagement Makeup')" class="block text-center w-full py-3 bg-roseGold text-white rounded-xl font-medium hover:bg-roseGoldLight hover:text-darkCharcoal transition-colors">Pilih Paket</a>
+                    </div>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="bg-champagne rounded-2xl p-8 shadow-sm border border-roseGold/20 hover:shadow-md transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="font-serif text-xl font-bold">Wedding / Pernikahan</h3>
+                        </div>
+                        <p class="text-gray-500 text-sm mb-6">Paket lengkap pengantin untuk hari bahagia yang tak terlupakan.</p>
+                        <ul class="space-y-3 text-sm text-gray-600 mb-8">
+                            <li><i class="fa-solid fa-check text-roseGold mr-2"></i> Makeup Akad & Resepsi</li>
+                            <li><i class="fa-solid fa-check text-roseGold mr-2"></i> Hairdo / Paes / Suntiang Modern</li>
+                            <li><i class="fa-solid fa-check text-roseGold mr-2"></i> Free Ibu & 2 Orang Keluarga</li>
+                            <li><i class="fa-solid fa-check text-roseGold mr-2"></i> Touch Up Sepanjang Acara</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-serif font-bold text-darkCharcoal mb-6">Rp 4.500.000</div>
+                        <a href="#booking" onclick="selectService('Wedding Makeup Package')" class="block text-center w-full py-3 bg-darkCharcoal text-champagne rounded-xl font-medium hover:bg-roseGold transition-colors">Pilih Paket</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Gallery Section Contoh -->
+    <section id="portfolio" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center max-w-xl mx-auto mb-16">
+            <span class="text-roseGold uppercase tracking-widest text-xs font-semibold">Galeri Hasil Karya</span>
+            <h2 class="font-serif text-3xl md:text-4xl font-bold mt-2">Portofolio Pilihan</h2>
+            <p class="text-gray-600 text-sm mt-3">Beberapa transformasi dan riasan terbaik dari klien setia kami.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="group relative overflow-hidden rounded-xl shadow-md h-80">
+                <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?q=80&w=600&auto=format&fit=crop" alt="Portfolio 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-darkCharcoal/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                    <span class="text-white font-serif text-lg">Bridal Elegance</span>
+                </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl shadow-md h-80">
+                <img src="https://images.unsplash.com/photo-1516914943479-89db7d9ae7f2?q=80&w=600&auto=format&fit=crop" alt="Portfolio 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-darkCharcoal/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                    <span class="text-white font-serif text-lg">Engagement Look</span>
+                </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl shadow-md h-80">
+                <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=600&auto=format&fit=crop" alt="Portfolio 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-darkCharcoal/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                    <span class="text-white font-serif text-lg">Graduation Glam</span>
+                </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl shadow-md h-80">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=600&auto=format&fit=crop" alt="Portfolio 4" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-darkCharcoal/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                    <span class="text-white font-serif text-lg">Editorial Makeup</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-softNude px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-xl mx-auto mb-16">
+                <span class="text-roseGold uppercase tracking-widest text-xs font-semibold">Testimoni Klien Contoh</span>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold mt-2">Kata Mereka</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-champagne p-8 rounded-2xl shadow-sm border border-roseGold/20">
+                    <div class="flex text-roseGold mb-4 space-x-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 text-sm italic mb-6">"Kak Sarah bener-bener lifesaver banget waktu acara lamaranku! Makeupnya tahan seharian gak luntur walaupun nangis terharu, dan keliatan glowing natural banget."</p>
+                    <h4 class="font-serif font-bold">Nadya Maharani</h4>
+                    <span class="text-xs text-gray-400">Engagement Client</span>
+                </div>
+                <div class="bg-champagne p-8 rounded-2xl shadow-sm border border-roseGold/20">
+                    <div class="flex text-roseGold mb-4 space-x-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 text-sm italic mb-6">"Puas banget pakai jasa AuraMUA untuk wedding. Tamu-tamu pada manglingin dan muji hasil makeupnya yang halus dan gak bikin muka keliatan berat."</p>
+                    <h4 class="font-serif font-bold">Putri & Ardi</h4>
+                    <span class="text-xs text-gray-400">Wedding Client</span>
+                </div>
+                <div class="bg-champagne p-8 rounded-2xl shadow-sm border border-roseGold/20">
+                    <div class="flex text-roseGold mb-4 space-x-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 text-sm italic mb-6">"Pelayanannya ramah, on time, dan sangat profesional. Hasil wisudaku rapi banget dan tahan dipakai foto-foto dari pagi sampai malam."</p>
+                    <h4 class="font-serif font-bold">Clara Destiani</h4>
+                    <span class="text-xs text-gray-400">Graduation Client</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section / Google Calendar Integration Simulator -->
+    <section id="booking" class="py-24 px-6 max-w-4xl mx-auto">
+        <div class="bg-darkCharcoal text-champagne rounded-3xl p-8 md:p-12 shadow-2xl border border-roseGold/30">
+            <div class="text-center max-w-xl mx-auto mb-10">
+                <span class="text-roseGold uppercase tracking-widest text-xs font-semibold">Online Booking System</span>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold mt-2 text-white">Reservasi Jadwal MUA</h2>
+                <p class="text-gray-400 text-sm mt-3">Isi formulir berikut untuk langsung menjadwalkan sesi Anda dan terhubung secara otomatis ke Google Calendar.</p>
+            </div>
+
+            <form id="booking-form" class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-roseGoldLight mb-2 font-medium">Nama Lengkap</label>
+                        <input type="text" id="client-name" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:border-roseGold focus:outline-none" placeholder="Masukkan nama Anda">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-roseGoldLight mb-2 font-medium">Nomor WhatsApp / Telepon</label>
+                        <input type="tel" id="client-phone" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:border-roseGold focus:outline-none" placeholder="Contoh: 08123456789">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-roseGoldLight mb-2 font-medium">Pilihan Layanan</label>
+                        <select id="service-select" class="w-full bg-[#2a2a2a] border border-white/10 rounded-xl px-4 py-3 text-white focus:border-roseGold focus:outline-none">
+                            <option value="Graduation & Party Makeup">Graduation & Party Makeup (Rp 750rb)</option>
+                            <option value="Engagement Makeup">Engagement / Lamaran Makeup (Rp 1.5jt)</option>
+                            <option value="Wedding Makeup Package">Wedding Makeup Package (Rp 4.5jt)</option>
+                            <option value="Custom Event Makeup">Custom Event Makeup</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-roseGoldLight mb-2 font-medium">Tanggal Acara</label>
+                        <input type="date" id="event-date" required class="w-full bg-[#2a2a2a] border border-white/10 rounded-xl px-4 py-3 text-white focus:border-roseGold focus:outline-none">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-roseGoldLight mb-2 font-medium">Waktu Mulai Acara</label>
+                        <input type="time" id="event-time" required class="w-full bg-[#2a2a2a] border border-white/10 rounded-xl px-4 py-3 text-white focus:border-roseGold focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-roseGoldLight mb-2 font-medium">Lokasi Acara</label>
+                        <input type="text" id="event-location" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:border-roseGold focus:outline-none" placeholder="Nama Venue / Alamat Lengkap">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs uppercase tracking-wider text-roseGoldLight mb-2 font-medium">Catatan Khusus (Opsional)</label>
+                    <textarea id="event-notes" rows="3" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:border-roseGold focus:outline-none" placeholder="Contoh: Request natural look, jumlah orang tambahan, dll"></textarea>
+                </div>
+
+                <div class="pt-4 flex flex-col sm:flex-row gap-4">
+                    <button type="button" onclick="generateGoogleCalendarLink()" class="flex-1 py-4 bg-roseGold text-white font-medium rounded-xl hover:bg-roseGoldLight hover:text-darkCharcoal transition-all shadow-lg flex items-center justify-center space-x-2">
+                        <i class="fa-solid fa-calendar-plus"></i>
+                        <span>Simpan ke Google Calendar</span>
+                    </button>
+                    <button type="button" onclick="sendWhatsAppBooking()" class="flex-1 py-4 bg-green-600 text-white font-medium rounded-xl hover:bg-green-500 transition-all shadow-lg flex items-center justify-center space-x-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Konfirmasi via WhatsApp</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-darkCharcoal text-gray-400 py-12 border-t border-roseGold/20">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
+            <div>
+                <a href="#" class="font-serif text-2xl font-bold tracking-wider text-white">
+                    AURA<span class="text-roseGold font-light">MUA</span>
+                </a>
+                <p class="text-xs text-gray-400 mt-2">Professional Makeup Studio & Beauty Consultant</p>
+            </div>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-white hover:text-roseGold text-lg transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-white hover:text-roseGold text-lg transition-colors"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#" class="text-white hover:text-roseGold text-lg transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <div class="text-xs text-gray-500 md:text-right">
+                &copy; 2026 RMA MUA LAMPUNG. All rights reserved. Designed for Elegance.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script / Interactivity & Integration Logic -->
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Function to select service automatically when clicking package button
+        function selectService(serviceName) {
+            const selectElement = document.getElementById('service-select');
+            for(let i = 0; i < selectElement.options.length; i++) {
+                if(selectElement.options[i].value === serviceName) {
+                    selectElement.selectedIndex = i;
+                    break;
+                }
+            }
+        }
+
+        // Google Calendar Event Link Generator
+        function generateGoogleCalendarLink() {
+            const name = document.getElementById('client-name').value;
+            const phone = document.getElementById('client-phone').value;
+            const service = document.getElementById('service-select').value;
+            const date = document.getElementById('event-date').value;
+            const time = document.getElementById('event-time').value;
+            const location = document.getElementById('event-location').value;
+            const notes = document.getElementById('event-notes').value;
+
+            if(!name || !phone || !date || !time || !location) {
+                alert('Mohon lengkapi semua field wajib pada form booking.');
+                return;
+            }
+
+            // Format datetime for Google Calendar (YYYYMMDDTHHmmssZ)
+            // Parse date & time
+            const dateTimeString = `${date}T${time}:00`;
+            const startDate = new Date(dateTimeString);
+            const endDate = new Date(startDate.getTime() + 3 * 60 * 60 * 1000); // Durasi 3 jam
+
+            const formatDateParam = (d) => {
+                return d.toISOString().replace(/-|:|\.\d\d\d/g, '');
+            };
+
+            const text = encodeURIComponent(`Booking MUA: ${service} - ${name}`);
+            const details = encodeURIComponent(`Detail Booking:\nNama: ${name}\nNo Telp/WA: ${phone}\nLayanan: ${service}\nLokasi: ${location}\nCatatan: ${notes}`);
+            const loc = encodeURIComponent(location);
+            const dates = `${formatDateParam(startDate)}/${formatDateParam(endDate)}`;
+
+            const gcalUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${text}&dates=${dates}&details=${details}&location=${loc}`;
+
+            // Open Google Calendar in new tab
+            window.open(gcalUrl, '_blank');
+        }
+
+        // WhatsApp Direct Booking Integration
+        function sendWhatsAppBooking() {
+            const name = document.getElementById('client-name').value;
+            const phone = document.getElementById('client-phone').value;
+            const service = document.getElementById('service-select').value;
+            const date = document.getElementById('event-date').value;
+            const time = document.getElementById('event-time').value;
+            const location = document.getElementById('event-location').value;
+            const notes = document.getElementById('event-notes').value;
+
+            if(!name || !phone || !date || !time || !location) {
+                alert('Mohon lengkapi semua field wajib pada form booking.');
+                return;
+            }
+
+            const message = `Halo RMA MUA, saya ingin melakukan booking jadwal:%0K%0K*Nama:* ${name}%0K*No WhatsApp:* ${phone}%0K*Layanan:* ${service}%0K*Tanggal:* ${date}%0K*Waktu:* ${time}%0K*Lokasi:* ${location}%0K*Catatan:* ${notes || '-'}`;
+            
+            const waUrl = `https://wa.me/62895337663121?text=${message}`;
+            window.open(waUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
